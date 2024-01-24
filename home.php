@@ -18,7 +18,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="home.php">Logo</a> </p>
+            <p><a href="home.php">ROHITH</a> </p>
         </div>
 
         <div class="right-links">
@@ -48,7 +48,7 @@
           <div class="top">
             <div class="box">
                 <p>Hello <b><?php echo $res_uname ?></b>, Welcome</p>
-            </div>
+            </div><br>
             <div class="box">
                 <p>Your email is <b><?php echo $res_email ?></b>.</p>
             </div>
