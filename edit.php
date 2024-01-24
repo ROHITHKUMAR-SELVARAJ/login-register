@@ -18,7 +18,7 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <p><a href="home.php"> Logo</a></p>
+            <p><a href="home.php"> ROHITH</a></p>
         </div>
 
         <div class="right-links">
@@ -47,7 +47,7 @@
                }else{
 
                 $id = $_SESSION['id'];
-                $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$username ");
+                $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$id ");
 
                 while($result = mysqli_fetch_assoc($query)){
                     $username = $result['username'];
@@ -67,11 +67,6 @@
                     <input type="text" name="email" id="email" value="<?php echo $res_Email; ?>" autocomplete="off" required>
                 </div>
 
-                <!-- <div class="field input">
-                    <label for="age">Age</label>
-                    <input type="number" name="age" id="age" value="<?php echo $res_Age; ?>" autocomplete="off" required>
-                </div> -->
-                
                 <div class="field">
                     
                     <input type="submit" class="btn" name="submit" value="Update" required>
